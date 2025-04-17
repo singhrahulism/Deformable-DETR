@@ -17,9 +17,9 @@ from typing import Iterable
 
 import torch
 import util.misc as utils
-from datasets.coco_eval import CocoEvaluator
-from datasets.panoptic_eval import PanopticEvaluator
-from datasets.data_prefetcher import data_prefetcher
+from detr.datasets.coco_eval import CocoEvaluator
+from detr.datasets.panoptic_eval import PanopticEvaluator
+from detr.datasets.data_prefetcher import data_prefetcher
 
 
 def train_one_epoch(model: torch.nn.Module, criterion: torch.nn.Module,
